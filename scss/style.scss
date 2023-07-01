@@ -1,6 +1,13 @@
 @import "__resetSetting";
 @import "__basicMixin.scss";
 
+.header {
+    &__top {
+        @include container(1700px); 
+    }
+    &__content {
+    }
+}
 
 
 
