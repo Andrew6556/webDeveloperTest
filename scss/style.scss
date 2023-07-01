@@ -1,11 +1,87 @@
 @import "__resetSetting";
 @import "__basicMixin.scss";
 
+
+$mainCl:#999;
+$borderCl:#E5E5E5;
+
+
 .header {
     &__top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 90px;
         @include container(1700px); 
     }
-    &__content {
+    .header__logo {
+        display: flex;
+        align-items: center;
+        &::after{
+            content: "";
+            width: 1px;
+            height: 90px;
+            margin-left: 35px;
+            background: $borderCl;
+        }
+        &-img{
+            border-radius: 50px;
+            padding: 11px 14px 11px 16px;
+            background: $mainCl;
+            margin-right: 15px;
+        }
+    }
+    .nav {
+        padding-left:35px;
+        .menu {
+            display: flex;
+        }
+        .menu__link:not(:last-child) {
+            margin-right: 30px;
+        }
+        .menu__item {
+            font-size: 16px;
+            color: $mainCl;
+            font-family: Gilroy;
+            font-weight: 600;
+            letter-spacing: 0.16px;
+        }
+    }
+    &__contacts {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        &-location {
+            font-size: 15px;
+            color: $mainCl;
+            font-weight: 600;
+            letter-spacing: 0.15px;
+            margin-right: 25px;
+            &::before{
+                content: "";
+                background: url("../img/icon/navbar/location.svg") no-repeat left;
+                padding: 15px;
+            }
+        }
+        &-tel {
+            display: flex;
+            align-items: center;
+            border-left: 1px solid $borderCl;
+            height: 100%;
+            padding-left: 35px;
+            &::before{
+                content: "";
+                background: url("../img/icon/navbar/tel.svg") no-repeat left;
+                padding: 15px;
+            }
+        }
+        &-link {
+            font-size: 15px;
+            color: $mainCl;
+            font-weight: 600;
+        }
+    }
+    .header__content {
     }
 }
 
