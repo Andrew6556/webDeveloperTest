@@ -79,12 +79,33 @@ h1, h2, h3, h4, h5, h6 {
   flex-direction: column;
 }
 
+.container {
+  max-width: 1450px;
+  margin: 0 auto;
+  width: 96%;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background: #999;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 155%;
+  letter-spacing: 0.16px;
+  padding: 12.5px 0;
+  border-radius: 10px;
+  width: 134px;
+}
+
 .header__top {
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 90px;
-  max-width: 1700px;
+  max-width: 1850px;
   margin: 0 auto;
   width: 96%;
 }
@@ -154,4 +175,120 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 15px;
   color: #999;
   font-weight: 600;
+}
+.header__content {
+  padding-top: 120px;
+  opacity: 0.8999999762;
+  background: #F0F0F0;
+}
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.header__title {
+  font-size: 54px;
+  color: #999;
+  font-weight: 600;
+  letter-spacing: 0.54px;
+}
+.header__text {
+  color: #999;
+  font-size: 18px;
+  line-height: 155%;
+  letter-spacing: 0.18px;
+}
+
+.form {
+  border-radius: 15px;
+  padding: 35px 40px 40px 40px;
+  background: white;
+}
+.form__title {
+  color: #999;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 130%;
+  letter-spacing: 0.32px;
+  margin-bottom: 10px;
+}
+.form__text {
+  color: #999;
+  font-size: 16px;
+  line-height: 155%;
+  letter-spacing: 0.16px;
+}
+.form__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+.form__input {
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid var(--gray-line, #E5E5E5);
+  background: var(--gray-bg, #F8F9FB);
+  padding: 12.5px 20px;
+}
+.form__label {
+  display: block;
+  color: #999;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 155%;
+  letter-spacing: 0.16px;
+  margin-bottom: 5px;
+}
+
+.checkbox__label {
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  color: #999;
+  font-family: Gilroy;
+  line-height: 155%;
+  letter-spacing: 0.14px;
+}
+
+.form__label_decor {
+  display: block;
+  text-decoration: underline;
+}
+
+.checkbox__label::before {
+  content: "";
+  display: inline-block;
+  align-self: flex-start;
+  justify-content: center;
+  background: #F8F9FB;
+  border: 1px solid #E5E5E5;
+  height: 24px;
+  width: 24px;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+.checkbox__label::after {
+  content: "";
+  transition: all 200ms ease-in-out 0s;
+  position: absolute;
+  background: url("../img/icon/form/check_mark.png") no-repeat right;
+  padding: 10px;
+  transform: scale(0);
+  left: 0;
+}
+
+.checkbox__input {
+  display: none;
+}
+
+.checkbox__input:checked + .checkbox__label::after {
+  transform: scale(1);
+}
+
+.checkbox {
+  display: flex;
+  margin: 30px 0;
+}
+
+.form__btn {
+  width: 100%;
 }
