@@ -1,9 +1,14 @@
 @import "__resetSetting";
-@import "__basicMixin.scss";
-
+@import "__basicMixin";
+@import "../fonts/__font";
 
 $mainCl:#999;
 $borderCl:#E5E5E5;
+
+
+
+
+
 
 .container{
     @include container(1450px)
@@ -24,6 +29,7 @@ $borderCl:#E5E5E5;
 }
 
 .header {
+    font-family: "Gilroy";
     &__top {
         display: flex;
         align-items: center;
@@ -59,7 +65,6 @@ $borderCl:#E5E5E5;
         .menu__item {
             font-size: 16px;
             color: $mainCl;
-            font-family: Gilroy;
             font-weight: 600;
             letter-spacing: 0.16px;
         }
@@ -99,7 +104,7 @@ $borderCl:#E5E5E5;
         }
     }
     &__content {
-        padding-top: 120px;
+        padding: 120px 0;
         opacity: 0.8999999761581421;
         background: #F0F0F0;
     }
@@ -139,8 +144,7 @@ $borderCl:#E5E5E5;
         font-size: 16px;
         line-height: 155%;
         letter-spacing: 0.16px;
-    }
-    &__inputs {
+        margin-bottom: 25px;
     }
     &__item {
         &:not(:last-child){
@@ -156,6 +160,7 @@ $borderCl:#E5E5E5;
         
     }
     &__label{
+        font-family: 'Gilroy';
         display: block;
         color:$mainCl;
         font-size: 16px;

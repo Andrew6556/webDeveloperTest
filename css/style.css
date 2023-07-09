@@ -79,6 +79,20 @@ h1, h2, h3, h4, h5, h6 {
   flex-direction: column;
 }
 
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy-Regular.eot");
+  src: local("Gilroy Regular"), local("Gilroy-Regular"), url("../fonts/Gilroy-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Gilroy-Regular.woff2") format("woff2"), url("../fonts/Gilroy-Regular.woff") format("woff"), url("Gilroy-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy-Semibold.eot");
+  src: local("Gilroy Semibold"), local("Gilroy-Semibold"), url("../fonts/Gilroy-Semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/Gilroy-Semibold.woff2") format("woff2"), url("../fonts/Gilroy-Semibold.woff") format("woff"), url("../fonts/Gilroy-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
 .container {
   max-width: 1450px;
   margin: 0 auto;
@@ -100,6 +114,9 @@ h1, h2, h3, h4, h5, h6 {
   width: 134px;
 }
 
+.header {
+  font-family: "Gilroy";
+}
 .header__top {
   display: flex;
   align-items: center;
@@ -138,7 +155,6 @@ h1, h2, h3, h4, h5, h6 {
 .header .nav .menu__item {
   font-size: 16px;
   color: #999;
-  font-family: Gilroy;
   font-weight: 600;
   letter-spacing: 0.16px;
 }
@@ -177,7 +193,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
 }
 .header__content {
-  padding-top: 120px;
+  padding: 120px 0;
   opacity: 0.8999999762;
   background: #F0F0F0;
 }
@@ -216,6 +232,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 16px;
   line-height: 155%;
   letter-spacing: 0.16px;
+  margin-bottom: 25px;
 }
 .form__item:not(:last-child) {
   margin-bottom: 20px;
@@ -228,6 +245,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 12.5px 20px;
 }
 .form__label {
+  font-family: "Gilroy";
   display: block;
   color: #999;
   font-size: 16px;
